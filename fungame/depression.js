@@ -107,11 +107,11 @@ function prestige(id) {
 
 
 function save() {
-  localStorage.setItem("funsave",JSON.stringify(game));
+  localStorage.setItem("savesave",JSON.stringify(game));
 }
 
 function load() {
-  var save = JSON.parse(localStorage.getItem("funsave"))
+  var save = JSON.parse(localStorage.getItem("savesave"))
   if (save) game = save
   var elem = document.getElementById("1")
   for (var i=1; i<game.costs.length; i++) {
