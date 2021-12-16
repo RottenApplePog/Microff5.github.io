@@ -166,6 +166,10 @@ setInterval(function() {
 
 setInterval(function() { save() }, 5000)
 
-
+function epTheme(){
+  var btn = document.querySelectorAll("div.container");
+  btn.classList.remove("btn");
+  btn.classList.add("epi");
+}
 
 load()
