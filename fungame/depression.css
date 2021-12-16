@@ -34,6 +34,43 @@ body {
   transition-duration: 0.3s;
 }
 
+.epi>button {
+  margin: 10px auto;
+  width: 130px;
+  height: 50px;
+  border: 3px solid white;
+  color: black;
+  vertical-align: top;
+  cursor: copy;
+  animation: epibg 1s infinite;
+  animation: epic 1.5s infinite;
+}
+
+.epi>button:hover {
+  border: 5px solid black;
+  transition-duration: 0.3s;
+}
+
+@keyframes epibg {
+  0% {background-color: #ff0000;}
+  15% {background-color: #ffff00;}
+  30% {background-color: #00ff00;}
+  45% {background-color: #00ffff;}
+  60% {background-color: #0000ff;}
+  75% {background-color: #ff00ff;}
+  100% {background-color: #ff0000;}
+}
+
+@keyframes epic {
+  0% {color: #0000ff;}
+  15% {color: #00ffff;}
+  30% {color: #00ff00;}
+  45% {color: #ffff00;}
+  60% {color: #ff0000;}
+  75% {color: #ff00ff;}
+  100% {color: #0000ff;}
+}
+
 .btn:hover {
   background-color: rgb(125, 151, 118);
 }
